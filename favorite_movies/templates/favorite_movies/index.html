@@ -1,0 +1,24 @@
+﻿{% extends "favorite_movies/base.html" %}
+
+{% block header %}
+  <div class='jumbotron'>
+      <h1>Track your learning.</h1>        
+  </div>
+{% endblock %}
+
+{% block content %}
+  <h2>
+    <a href="{% url 'users:register' %}">Register an account</a> to make
+     your own Learning Log, and list the topics you're learning about.
+  </h2>
+  <h2>
+    Whenever you watch something new about a topic, make an entry 
+    summarizing what you've watch.
+  </h2>
+  <h2>
+    你可以注册登录记笔记哦！！！
+  </h2>
+  <h2>
+    Hostname:xianyuemeng
+  </h2>
+{% endblock %}

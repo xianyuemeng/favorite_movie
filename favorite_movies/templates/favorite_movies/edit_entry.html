@@ -1,0 +1,15 @@
+{% extends "favorite_movies/base.html" %}
+
+{% block content %}
+
+  <p><a href="{% url 'favorite_movies:topic' topic.id %}">{{ topic }}</a></p>
+    
+  <p>Edit entry:</p>
+    
+  <form action="{% url 'favorite_movies:edit_entry' entry.id %}" method='post'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button name="submit">save changes</button>
+  </form>
+
+{% endblock content %}
